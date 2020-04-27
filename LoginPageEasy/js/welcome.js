@@ -1,5 +1,6 @@
 document.body.onload = function(){
   verifyToken();
+  document.getElementById('logout').addEventListener("click", logout);
 };
 function verifyToken() {
   var token = localStorage.getItem("token");
