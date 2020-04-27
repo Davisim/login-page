@@ -1,3 +1,6 @@
+document.body.onload = function(){
+  verifyToken();
+};
 function verifyToken() {
   var token = localStorage.getItem("token");
   var email = localStorage.getItem("email");
@@ -5,6 +8,7 @@ function verifyToken() {
     document.getElementById('email').innerHTML = email;
     document.getElementById('token').innerHTML = token;
   }else {
+    console.log('Not logged in!');
     location.replace('index.html');
   }
 }

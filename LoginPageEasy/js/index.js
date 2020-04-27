@@ -1,3 +1,8 @@
+
+document.body.onload = function(){
+  document.getElementById("signIn").addEventListener("click", signIn);
+};
+
 function signIn() {
   var email = document.getElementById('email').value;
   var pwd = document.getElementById('password').value
